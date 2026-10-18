@@ -13,8 +13,8 @@
     <meta name="twitter:description" content="Browser-based side-scrolling video game with the matter.js physics engine.">
     <!-- <meta http-equiv="refresh" content="0; url=https://landgreen.github.io/n-gon/"> -->
     <title>n-gon</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel='shortcut icon' href='favicon.ico' type='image/x-icon' />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/zx9qv8n4rpl7t6k2m1y/n-gon@master/style.css">
+    <link rel='shortcut icon' href='https://cdn.jsdelivr.net/gh/zx9qv8n4rpl7t6k2m1y/n-gon@master/favicon.ico' type='image/x-icon' />
 </head>
 
 <body>
@@ -52,7 +52,6 @@
         <text x="10" y="32">continue</text>
     </svg>
 
-
     <div id='info'>
         <div>
             <details id='settings-details' name="front-page-group">
@@ -83,7 +82,7 @@
                     <input type="checkbox" id="community-maps" name="community-maps" style="width:17px; height:17px;">
                     <label for="community-maps" title="add about 20 player made levels to the random n-gon level pool">community maps</label>
                     <br>
-                    <label for="banned" title="type banned levels with a space between them.  Example:  run temple biohazard">banned levels:</label>
+                    <label for="banned" title="type banned levels with a space between them. Example: run temple biohazard">banned levels:</label>
                     <input id="banned" name="banned" placeholder="list levels by name" autocomplete="off" spellcheck="false" style="width: 182px;" />
                     <br>
                     <label for="seed" title="the seed determines level order, tech choices, and mob types">randomization seed:</label>
@@ -99,15 +98,15 @@
                     <br>
                     <br>
                     <br>
-                    <svg class="SVG-button SVG-button-splash" id="enable-gamepad" width="300" height="60" stroke='none' fill='#333' font-family="Arial, sans-serif" onclick="javascript: (async () => { const scriptText = await (await fetch('https://raw.githubusercontent.com/kgurchiek/n-gon-controller/main/main.js')).text(); var script = document.createElement('script'); script.type = 'text/javascript'; script.textContent = scriptText; document.head.appendChild(script); document.getElementById('enable-gamepad').style.stroke = '#0b5';})();">
+                    <svg class="SVG-button SVG-button-splash" id="enable-gamepad" width="300" height="60" stroke='none' fill='#333' font-family="Arial, sans-serif" onclick="javascript: (async () => { const scriptText = await (await fetch('https://cdn.jsdelivr.net/gh/kgurchiek/n-gon-controller@main/main.js')).text(); var script = document.createElement('script'); script.type = 'text/javascript'; script.textContent = scriptText; document.head.appendChild(script); document.getElementById('enable-gamepad').style.stroke = '#0b5';})();">
                         <text x="39" y="19" font-size="22px">load gamepad support</text>
                         <text x="40" y="38" fill='#aaa' font-size="15px">community code, external script</text>
                         <text x="12" y="55" fill='#aaa' font-size="14px">https://github.com/kgurchiek/n-gon-controller</text>
                     </svg>
-
                 </div>
             </details>
         </div>
+
         <div>
             <details id="control-details" name="front-page-group">
                 <summary>controls</summary>
@@ -177,11 +176,11 @@
                             <td></td>
                         </tr>
                     </table>
-                    <br><button id="control-reset" type="button">reset</button><span style="font-size: 60%;"> to default
-                        keys</span>
+                    <br><button id="control-reset" type="button">reset</button><span style="font-size: 60%;"> to default keys</span>
                 </div>
             </details>
         </div>
+
         <div>
             <details id="music-details" name="front-page-group">
                 <summary>music</summary>
@@ -205,27 +204,22 @@
                         <option value="apple">Apple Music</option>
                     </select>
                 </div>
-
             </details>
         </div>
+
         <div>
             <details id="updates" name="front-page-group">
                 <summary>updates</summary>
                 <div id="updates-div" class="details-div" style="font-size: 70%;height: 400px;overflow: scroll;max-width: 50rem;"></div>
             </details>
         </div>
+
         <div>
             <details name="front-page-group">
                 <summary>about</summary>
                 <div class="details-div" style="max-width: 24rem;padding:0.6em;font-size: 1.3rem;">
                     <span>a game about self-locating uncertainty</span>
                     <a id="github" href="https://github.com/landgreen/n-gon" aria-label="github">
-                        <!-- <svg viewBox="0 0 100 16" xmlns="http://www.w3.org/2000/svg" fill="#1B1F23">
-                            <path d="M8 0C3.58 0 0 3.58 0 8C0 11.54 2.29 14.53 5.47 15.59C5.87 15.66 6.02 15.42 6.02 15.21C6.02 15.02 6.01 14.39 6.01 13.72C4 14.09 3.48 13.23 3.32 12.78C3.23 12.55 2.84 11.84 2.5 11.65C2.22 11.5 1.82 11.13 2.49 11.12C3.12 11.11 3.57 11.7 3.72 11.94C4.44 13.15 5.59 12.81 6.05 12.6C6.12 12.08 6.33 11.73 6.56 11.53C4.78 11.33 2.92 10.64 2.92 7.58C2.92 6.71 3.23 5.99 3.74 5.43C3.66 5.23 3.38 4.41 3.82 3.31C3.82 3.31 4.49 3.1 6.02 4.13C6.66 3.95 7.34 3.86 8.02 3.86C8.7 3.86 9.38 3.95 10.02 4.13C11.55 3.09 12.22 3.31 12.22 3.31C12.66 4.41 12.38 5.23 12.3 5.43C12.81 5.99 13.12 6.7 13.12 7.58C13.12 10.65 11.25 11.33 9.47 11.53C9.76 11.78 10.01 12.26 10.01 13.01C10.01 14.08 10 14.94 10 15.21C10 15.42 10.15 15.67 10.55 15.59C13.71 14.53 16 11.53 16 8C16 3.58 12.42 0 8 0Z" />
-                            <g stroke='none' font-size="8px" font-family="Arial Black, sans-serif">
-                                <text x="19" y="11">Github</text>
-                            </g>
-                        </svg> -->
                         <svg viewBox="-19 -8 40 16" xmlns="http://www.w3.org/2000/svg" stroke="#333" stroke-width="0.4">
                             <defs>
                                 <linearGradient id="horizontalGradient" x1="-8" y1="0" x2="8" y2="0" gradientUnits="userSpaceOnUse">
@@ -243,15 +237,13 @@
                         The code is free and open source on <a id="github" href="https://github.com/landgreen/n-gon" aria-label="github">GitHub</a>.
                         This is just my hobby project, but I try to fix bugs when <a id="github" href="https://github.com/landgreen/n-gon/issues" aria-label="github">reported</a>.
                     </p>
-
+                    
                     <span style="max-width: 25rem; line-height: 180%;">
                         <label for="classic-select" title="play older versions of n-gon">classic n-gon:</label>
                         <select name="classic-select" id="classic-select" onChange="window.location.href=this.value">
                             <option value="https://scratch.mit.edu/projects/14005697/fullscreen/">mech: 2014</option>
-                            <option value="https://scratch.mit.edu/projects/22573757/fullscreen/">spacetime: 2015
-                            </option>
-                            <option value="https://scratch.mit.edu/projects/41429974/fullscreen/">ballistics: 2015
-                            </option>
+                            <option value="https://scratch.mit.edu/projects/22573757/fullscreen/">spacetime: 2015</option>
+                            <option value="https://scratch.mit.edu/projects/41429974/fullscreen/">ballistics: 2015</option>
                             <option value="https://scratch.mit.edu/projects/43690666/fullscreen/">portal: 2016</option>
                             <option value="https://codepen.io/lilgreenland/full/ozXNWZ">side scroller: 2016</option>
                             <option value="https://codepen.io/lilgreenland/full/wzARJY">side scroller: 2016</option>
@@ -308,6 +300,7 @@
             <path class="draw-lines-o" transform="translate(10.9,0) scale(1.25)" d="M0 0  h1  l 0.7 0.7  v1  l -0.7 0.7  h-1  l -0.7 -0.7  v-1  l 0.7 -0.7 Z" stroke-width='0.07' />
             <path class="draw-lines" transform="translate(14,0)" d="M0 0  h1  v0.2  h1.7  l0.3 0.3  v2.6  h-1  v-1.7  h-1  v1.7  h-1 z" stroke-width='0.0875' />
         </g>
+
         <!-- mouse -->
         <g class="draw-lines3" transform="translate(320,430) scale(0.28)" stroke-linecap="round" stroke-linejoin="round" stroke-width="10px" stroke="#333" fill="none">
             <path class="fade-in" stroke="none" fill="#fff" d="M827,112 h30 a140,140,0,0,1,140,140 v268 a140,140,0,0,1-140,140 h-60 a140,140,0,0,1-140-140v-268 a140,140,0,0,1,140-140h60" />
@@ -385,24 +378,26 @@
             <text x="629" y="438">field</text>
         </g>
     </svg>
+
     <div id="hover-help" popover="hint" role="tooltip"></div>
-    <script src='lib/matter.min.js'></script>
-    <script src="js/query-ray-any.js"></script>
-    <script src="js/simulation.js"></script>
-    <script src="js/console-mirror.js"></script>
-    <script src="js/player.js"></script>
-    <script src="js/powerup.js"></script>
-    <script src="js/tech.js"></script>
-    <script src="js/bullet.js"></script>
-    <script src="js/mob.js"></script>
-    <script src="js/spawn.js"></script>
-    <script src="js/level.js"></script>
-    <!-- <script src="js/level2.js"></script> -->
-    <script src="js/lore.js"></script>
-    <script src="js/engine.js"></script>
-    <script src="js/save.js"></script>
-    <script src="js/hover-help.js"></script>
-    <script src="js/index.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/gh/zx9qv8n4rpl7t6k2m1y/n-gon@master/lib/matter.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/zx9qv8n4rpl7t6k2m1y/n-gon@master/js/query-ray-any.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/zx9qv8n4rpl7t6k2m1y/n-gon@master/js/simulation.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/zx9qv8n4rpl7t6k2m1y/n-gon@master/js/console-mirror.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/zx9qv8n4rpl7t6k2m1y/n-gon@master/js/player.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/zx9qv8n4rpl7t6k2m1y/n-gon@master/js/powerup.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/zx9qv8n4rpl7t6k2m1y/n-gon@master/js/tech.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/zx9qv8n4rpl7t6k2m1y/n-gon@master/js/bullet.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/zx9qv8n4rpl7t6k2m1y/n-gon@master/js/mob.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/zx9qv8n4rpl7t6k2m1y/n-gon@master/js/spawn.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/zx9qv8n4rpl7t6k2m1y/n-gon@master/js/level.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/gh/zx9qv8n4rpl7t6k2m1y/n-gon@master/js/level2.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/gh/zx9qv8n4rpl7t6k2m1y/n-gon@master/js/lore.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/zx9qv8n4rpl7t6k2m1y/n-gon@master/js/engine.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/zx9qv8n4rpl7t6k2m1y/n-gon@master/js/save.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/zx9qv8n4rpl7t6k2m1y/n-gon@master/js/hover-help.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/zx9qv8n4rpl7t6k2m1y/n-gon@master/js/index.js"></script>
 </body>
 
 </html>
